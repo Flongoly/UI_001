@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300;1,400&family=PT+Serif&display=swap");
+body {
+  background: linear-gradient(to top right, #221F1F 60%, rgb(42, 85, 67));
+  height: 100vh;
+}
+
+.leftbox {
+  position: absolute;
+  float: left;
+  width: 15%;
+  height: 110%;
+  background: #E50914;
+  top: -5%;
+  left: 5%;
+}
+
+nav {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #E50914;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav i {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #B81D24;
+  box-shadow: 2px 4px 20px rgba(34, 31, 31, 0.9);
+}
+nav i.fa-solid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+.content {
+  width: 60%;
+  margin-left: 23%;
+}
+
+.container {
+  width: 600px;
+  background: rgba(245, 245, 241, 0.9);
+  padding: 2.5%;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 2px 5px 20px rgba(245, 245, 241, 0.5);
+  margin-top: 50%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+h1 {
+  color: #221F1F;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h2 {
+  color: #B81D24;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+input, select {
+  width: 280px;
+}
+
+.noshow {
+  opacity: 0;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/countries-list@2.4.0/dist/countries.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/71f613be0c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="logo">
+            <img src="./assets\Netflix.png" alt="logo">
+        </div>
+
+        <div class="leftbox">
+            <nav>
+                <a id="profile" class="active"><i class="fa-solid fa-user"></i></a>
+                <a id="payment"><i class="fa-solid fa-credit-card"></i></a>
+                <a id="subscription"><i class="fa-solid fa-tv"></i></a>
+                <a id="privacy"><i class="fa-solid fa-gear"></i></a>
+                <a id="settings"><i class="fa-solid fa-sliders"></i></a>
+            </nav>
+        </div>
+        
+        <div class="content">
+            <div class="profile">
+                <h1>Personal Info</h1>
+
+                <h2>Full Name</h2>
+                <input type="text" id="name" name="name" placeholder="Your Name" pattern="[A-Za-zÀ-ÖØ-öø-ÿ]+" title="Please enter only letters" required>
+
+                <h2>Birthday</h2>
+                <input type="date" id="date-picker">
+
+                <h2>Country</h2>
+                <select id="country" name="country"></select>
+
+                <h2>Email</h2>
+                <input type="text" id="email" name="email" class="email" placeholder="Your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+
+                <h2>Password</h2>
+                <input type="password" id="password" name="password" placeholder="Password" pattern=".{8,}" title="Password must be at least 8 characters long" required>
+
+            </div>
+            <div class="payment noshow">
+                <h1>payments</h1>
+            </div>
+            <div class="subscription noshow"></div>
+            <div class="privacy noshow"></div>
+            <div class="settings noshow"></div>
+        </div>
+    </div>
+</body>
+</html>
